@@ -32,7 +32,6 @@ var (
 	// Global setting objects
 	Cfg      *ini.File
 	ProdMode bool
-	// RunUser      string
 )
 
 // execPath returns the executable path.
