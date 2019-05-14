@@ -8,16 +8,9 @@ import (
 	"log"
 )
 
-// Bdoc is the root for a n-tree
-type Bdoc struct {
-	DocID string
-	ID    string
-	Value map[string]interface{}
-}
-
-// Sdoc is the leaf node for the tree
-type Sdoc struct {
-	DocID string
+// Node of a n-tree
+type Node struct {
+	GID   string
 	ID    string
 	PID   string
 	Value map[string]interface{}
