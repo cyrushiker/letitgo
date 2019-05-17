@@ -149,7 +149,6 @@ func (d *Doc) CreateRecords() error {
 			r := &Record{Type: "property", Property: p}
 			meta := []byte(fmt.Sprintf(`{ "index" : { "_id" : "property:%s" } }%s`, p.ID, "\n"))
 			data, err := json.Marshal(r)
-			// log.Println(string(data))
 			if err != nil {
 				return fmt.Errorf("Cannot encode node %s: %s", p.ID, err)
 			}
